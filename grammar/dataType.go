@@ -1,11 +1,8 @@
-package main
+package grammar
 
-func defineVar() {
+func DefineVar() {
+
 	var i int
 	i = 2
 	print(i)
-}
-
-func main()  {
-	defineVar()
 }
