@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/GoProject/grammar"
+	"github.com/juniuszhou/GoProject/grammar"
 )
 
 
 func main(){
 	grammar.PrintFmt("programme done.")
-	grammar.LogData("ERROR", "programme down.")
+	// error printed with red.
+	// grammar.LogData("ERROR", "programme down.")
 	grammar.DefineVar()
 	fmt.Println("game over")
 
@@ -17,5 +18,8 @@ func main(){
 	call.CallFunc()
 
 	// log usage
+
+	fmt.Println("over")
+
 }
 
