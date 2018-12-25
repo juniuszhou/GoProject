@@ -1,15 +1,14 @@
-package grammar
+package main
 
 import "fmt"
 
-type ICall interface{
+type ICall interface {
 	CallFunc()
 }
 
 type Implement struct {
-
 }
 
-func (i * Implement) CallFunc() {
+func (i *Implement) CallFunc() {
 	fmt.Println("Implementation called.")
 }

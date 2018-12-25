@@ -1,7 +1,10 @@
 package main
 
 import "fmt"
-import "github.com/juniuszhou/GoProject/classes/"
+
+type Base struct {
+	BaseName string
+}
 
 type Child struct {
 	Base
@@ -10,5 +13,7 @@ type Child struct {
 
 func main() {
 	child := new(Child)
+	child.ChildName = "hello"
+	child.BaseName = "world"
 	fmt.Println(child.ChildName)
 }

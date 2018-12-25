@@ -1,4 +1,4 @@
-package grammar
+package main
 
 type MyClass struct {
 	memberOne int

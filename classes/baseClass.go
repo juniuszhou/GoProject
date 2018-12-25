@@ -1,5 +1,5 @@
 package main
 
-type Base struct{
-	BaseName string
+func main() {
+	println("Hello.")
 }

@@ -11,8 +11,7 @@ func (e *MyError) Error() string {
 	return "MyError"
 }
 
-func main(){
-	var error = new(MyError)
-	error.Error()
-
+func main() {
+	var err = new(MyError)
+	_ = err.Error()
 }
