@@ -1,8 +1,8 @@
 package main
 
 import (
-	"math/rand"
 	"fmt"
+	"math/rand"
 )
 
 func Loop(index int) {
@@ -13,9 +13,8 @@ func Loop(index int) {
 	fmt.Println(index, up)
 }
 
-func main(){
-	for i := 0; i < 10; i+=1{
+func main() {
+	for i := 0; i < 10; i += 1 {
 		go Loop(i)
 	}
 }
-

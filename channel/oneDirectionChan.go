@@ -2,16 +2,15 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	var normalChan chan int
 	var writeChan chan<- int
 	var readChan <-chan int
 
 	var result = <-normalChan
 	fmt.Println(result)
-	writeChan<- 10 // only for write
-	_ = <-readChan // only for read
-
+	writeChan <- 10 // only for write
+	_ = <-readChan  // only for read
 
 	// transform
 	ch := make(chan int)
@@ -25,9 +24,5 @@ func main(){
 	if ok {
 		fmt.Println(value)
 	}
-
-
-
-
 
 }

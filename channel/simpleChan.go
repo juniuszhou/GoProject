@@ -1,8 +1,8 @@
 package main
 
 import (
-	"math/rand"
 	"fmt"
+	"math/rand"
 )
 
 func Call(ch chan int) {
@@ -14,10 +14,10 @@ func Call(ch chan int) {
 	ch <- up
 }
 
-func main(){
+func main() {
 	// make channel array
 	chs := make([]chan int, 10)
-	for i := 0; i < 10; i++{
+	for i := 0; i < 10; i++ {
 		// make each channel
 		chs[i] = make(chan int)
 		// call with channel parameter
